@@ -117,25 +117,25 @@ public class GameManager {
 		
 		if(selectAnimal == 1) {
 			if(((Rabbit)animal[0]).avg() >= 70) {
-				System.out.println("축하합니다!토끼가 동물원을 탈출했습니다!");
+				System.out.println("\n토끼의 평균 능력치는 " + ((Rabbit)animal[0]).avg() +"입니다. \n축하합니다!토끼가 동물원을 탈출했습니다!");
 			}else{
-				System.out.println("토끼가 탈출에 실패했습니다.");
+				System.out.println("\n토끼의 평균 능력치는 " + ((Rabbit)animal[0]).avg() +"입니다. \n토끼가 탈출에 실패했습니다.");
 			}
 			
 		}else if (selectAnimal == 2) {
 			if(((Bear)animal[1]).avg() >= 70) {
-				System.out.println("축하합니다!곰이 동물원을 탈출했습니다!");
+				System.out.println("\n곰의 평균 능력치는 " + ((Bear)animal[1]).avg() +"입니다. \n축하합니다! 곰이 동물원을 탈출했습니다!");
 			}else{
-				System.out.println("곰이 탈출에 실패했습니다.");
+				System.out.println("\n곰의 평균 능력치는 " + ((Bear)animal[1]).avg() +"입니다. \n곰이 탈출에 실패했습니다.");
 			}
 			
 
 		}else if (selectAnimal == 3) {
 
 			if(((Zebra)animal[2]).avg() >= 70) {
-				System.out.println("축하합니다!얼룩말이 동물원을 탈출했습니다!");
+				System.out.println("\n얼룩말의 평균 능력치는 " + ((Zebra)animal[2]).avg() +"입니다. \n축하합니다!얼룩말이 동물원을 탈출했습니다!");
 			}else{
-				System.out.println("얼룩말이 탈출에 실패했습니다.");
+				System.out.println("\n얼룩말의 평균 능력치는 " + ((Zebra)animal[2]).avg() +"입니다. \n얼룩말이 탈출에 실패했습니다.");
 			}
 		}
 		
