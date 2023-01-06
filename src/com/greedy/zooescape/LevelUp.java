@@ -1,6 +1,6 @@
 package com.greedy.zooescape;
 
-public class LevelUp {
+public  class LevelUp {
 	
 	private int hp;
 	private int speed;
@@ -16,8 +16,6 @@ public class LevelUp {
 		this.speed = speed;
 		this.power = power;
 	}
-
-	
 	
 	public int getHp() {
 		return hp;
@@ -43,20 +41,11 @@ public class LevelUp {
 		this.power = power;
 	}
 
+	@Override
+	public String toString() {
+		return "LevelUp [hp=" + hp + ", speed=" + speed + ", power=" + power + "]";
+	}
 	
 	
 	
-	
-
-	
-
-	
-
-	
-
-
-
-
-
-
 }

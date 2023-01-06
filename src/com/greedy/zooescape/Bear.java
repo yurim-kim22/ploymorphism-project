@@ -7,12 +7,12 @@ public class Bear extends LevelUp implements IFood {
 	private int power;
 	
 	
-	public Bear() {}
+	//public Bear() {}
 	
 	public Bear(int hp, int speed, int power) {
 		
 		this.hp = hp;
-		this.speed = 10;
+		this.speed = speed;
 		this.power = power;
 
 	
@@ -77,7 +77,19 @@ public class Bear extends LevelUp implements IFood {
 		System.out.println("곰이 식중독에 걸려서 체력이 " + IFOODILLNESS + "만큼 떨어졌습니다. 곰의 현재 체력은 " + hp + "입니다.");
 		
 	}
+	
+	
 
+	
+	@Override
+	public String toString() {
+		return "당신이 선택한 동물은 곰입니다. \n곰의 현재 상태는 체력 : " + hp + ", 속도 : " + speed + ", 파워 : " + power + "입니다.";
+	}
+
+	
+	public int avg() {
+		return (hp + speed + power)/3;
+	}
 
 	
 }

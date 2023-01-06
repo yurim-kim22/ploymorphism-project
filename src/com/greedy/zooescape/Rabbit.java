@@ -71,7 +71,21 @@ package com.greedy.zooescape;
 			System.out.println("토끼가 식중독에 걸려서 체력이 " + IFOODILLNESS + "만큼 떨어졌습니다. 토끼의 현재 체력은 " + hp + "입니다.");
 			
 		}
+
+		@Override
+		public String toString() {
+			return "당신이 선택한 동물은 토끼입니다. \n토끼의 현재 상태는 체력 : " + hp + ", 속도 : " + speed + ", 파워 : " + power + "입니다.";
+		}
+		
+		public int avg() {
+			return (hp + speed + power)/3;
+		}
+		
+		
+		
+		
+		
+		
 		
 
 	}
-
